@@ -11,11 +11,11 @@ These are context menu entries for using TortoiseSVN running in wine with Nemo f
 6. Right-click on a file or folder in Nemo and you should see TortoiseSVN context menu entries!
 
 # General workarounds for other TortoiseSVN wine issues
-
-### **Issue:** [TortoiseMerge doesn't start.](https://bugs.winehq.org/show_bug.cgi?id=50778)
-#### **Workaround option 1**
+These are known issues with TortoiseSVN in wine as of 2021-03-24, so applying a workaround for each of the issues described here is recommended for TortoiseSVN to function as expected.
+## **Issue:** [TortoiseMerge doesn't start.](https://bugs.winehq.org/show_bug.cgi?id=50778)
+### **Workaround option 1**
 Disable the ribbon UI in TortoiseMerge by creating DWORD "HKCU\Software\\TortoiseMerge\\UseRibbons" and setting it to FALSE.
-#### **Workaround option 2**
+### **Workaround option 2**
 1. Copy the following DLL files from a Windows installation to ~/.wine/drive_c/windows/system32/
 
     - C:\Windows\System32\UIRibbon.dll
@@ -25,6 +25,6 @@ Disable the ribbon UI in TortoiseMerge by creating DWORD "HKCU\Software\\Tortois
 
 2. Rename them to lower-case versions.
 3. Set them to be used as overrides in winecfg.
-### **Issue:** Text is invisible in the editable text field in the commit menu.
-#### **Workaround**
+## **Issue:** Text is invisible in the editable text field in the commit menu.
+### **Workaround**
 In TortoiseSVN advanced settings, disable the Direct2D-rendered Scintilla text field by setting ScintillaDirect2D to "false".
