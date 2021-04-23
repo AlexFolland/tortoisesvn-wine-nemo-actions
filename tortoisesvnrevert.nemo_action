@@ -90,7 +90,7 @@ Dependencies=svn;wine;
 #     "exec <program>" run program and check its exit code (0 is pass, non-0 is fail).
 #                      Enclose in < > if the program resides in the action's folder.
 
-#Conditions=exec svn info "%F";
+Conditions=exec svn info "%F";
 
 # Escape Spaces - set to true to escape spaces in filenames and uris ($U, $F, $P, $D)
 #
