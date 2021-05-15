@@ -35,7 +35,7 @@ Comment=Update to the latest revision with TortoiseSVN running in wine
 # What to run.  Enclose in < > to run an executable that resides in the actions folder.
 # **** REQUIRED ****
 #Exec=gedit %F
-Exec=wine TortoiseProc.exe /command:update /path:'Z:%F'
+Exec=<generatetortoiseproccommand.sh update %F>
 
 # Icon name to use in the menu - must be a theme icon name
 Icon-Name=27FD_TortoiseProc.0
