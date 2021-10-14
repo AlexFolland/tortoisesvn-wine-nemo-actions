@@ -2,7 +2,7 @@
 These are context menu entries for using TortoiseSVN running in wine with Nemo file manager.  If you've come from using TortoiseSVN in Windows and you want a familiar client, you can use these to regain your Windows experience.
 
 ## How to use
-1. Ensure `wine` or `wine-staging` version 6.5 or later is installed.  This has been tested with `wine-staging` only.
+1. Ensure `wine` or `wine-staging` version 6.5 or later is installed.  Version 6.5 is the minimum version, but has major unrelated issues, so version 6.16 or later is recommended.
 2. Ensure `nemo` is installed.
 3. Ensure `subversion` is installed on the Linux side.  The native Linux `svn` tool is used to check svn info quickly before displaying context menu entries.  This is to prevent showing entries that don't make sense.
 3. Ensure TortoiseSVN is installed in your system default wine prefix (usually in `~/.wine/drive_c/Program Files/TortoiseSVN/`).  You can download the installer from [here](https://tortoisesvn.net/downloads.html).  This has been tested with the 64-bit version only.
